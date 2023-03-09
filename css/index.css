@@ -624,9 +624,9 @@ footer .content-wrapper{
   box-shadow: 0px 24px 20px -16px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.3s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.3s
 }
 .modal-header{
   display: flex;
@@ -675,11 +675,11 @@ footer .content-wrapper{
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {top:50px; opacity:0; transform: scale(0.9);} 
+  to {top:0; opacity:1; transform: scale(1);}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {top:50px; opacity:0; transform: scale(0.9);} 
+  to {top:0; opacity:1; transform: scale(1);}
 }
