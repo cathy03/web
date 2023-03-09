@@ -465,6 +465,7 @@ details{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 .question span{
   display: block;
