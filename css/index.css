@@ -394,6 +394,7 @@ nav .wrapper{
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  margin-top:  8px;
 }
 .reviews .info-name{
   font-weight: 900;
