@@ -17,6 +17,44 @@
   <title>설레는 이동, 풀러팅</title>
 </head>
 <body>
+  <div id="carModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>법인, 리스, 가족명의 <br>차량 등록 하기</h4>
+        <img class="close" src="img/close_icon.png" alt="">
+      </div>
+      <ul class="modal-body">
+        <li>
+          <span>가족명의 차량</span>
+          <p>차량등록증, 가족관계증명서, 차량 사진</p>
+        </li>
+        <li>
+          <span>회사 차량</span>
+          <p>차량 등록증, 사업자등록증, 재직증명서</p>
+        </li>
+        <li>
+          <span>리스차량(본인)</span>
+          <p>차량 등록증, 리스 계약서</p>
+        </li>
+        <li>
+          <span>리스차량(가족)</span>
+          <p>차량등록증, 가족관계증명서, 리스계약서</p>
+        </li>
+        <li>
+          <span>리스차량(법인)</span>
+          <p>차량 등록증, 사업자등록증, 재직증명서, 리스 계약서</p>
+        </li>
+        <li>
+          <span>리스차량(법인대표)</span>
+          <p>차량등록증, 사업자등록증, 리스계약서</p>
+        </li>
+        <li>
+          <p>모든 서류는 제출 본인을 기준으로 본인과 차량소유주의 관계가 증명이 되어야 합니다.</p>
+        </li>
+      </ul>
+      <button onclick="goEmail()" class="modal-button">차량 등록 메일 보내기</button>
+    </div>
+  </div>
   <button onclick="appLink()" class="download-button">지금 가입하고 무료 시트받기</button>
   <main>
     <section class="main-container">
@@ -178,7 +216,7 @@
               </div>
 
             </div>
-            <button class="car-regist"><span>리스, 법인, 가족 명의 차량 등록하기</span><img src="img/add_icon.png" alt=""></button>
+            <button id="openModal" class="car-regist"><span>법인, 리스, 가족 명의 차량 등록하기</span><img src="img/add_icon.png" alt=""></button>
           </li>
         </ul>
       </div></div>
@@ -357,6 +395,7 @@
             <li><p>사업자 등록번호 : 337-81-02739</p></li>
             <li><p>통신판매신고번호 : 제2023-서울송파-0811호</p></li>
             <li><p>서울특별시 송파구 성내천로 211 14층, 8호(마천동)</p></li>
+            <li><p>Copyright © 2023 풀러팅 All Rights Reserved.</p></li>
           </ul>
           <ul class="footer-email">
             <li><a href="mailto:contacts@poolirting.com" target="_blank" rel="">제휴 및 기타 제안 : contacts@poolirting.com</a></li>
@@ -364,6 +403,8 @@
             <li><p>긴급신고센터 : 010-8260-2216 (24시간)</p></li>
           </ul>
           <ul class="footer-link">
+            <li><a href="https://www.poolirting.com/">회사소개</a></li>
+            <li><a href="https://poolirting.oopy.io/notice">공지사항</a></li>
             <li><a href="http://prod-plt-api.poolirting.com/rules/privacy.html">개인정보처리방침</a></li>
             <li><a href="http://prod-plt-api.poolirting.com/rules/service_location.html">위치기반서비스 이용약관</a></li>
             <li><a href="http://prod-plt-api.poolirting.com/rules/service.html">서비스 이용약관</a></li>
@@ -430,6 +471,36 @@
     window.open("https://www.poolirting.com/", "_blank");
 }
   }
+
+  // Get the modal
+var modal = document.getElementById("carModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+const goEmail = () =>{
+  window.open("mailto:helps@poolirting.com", "_blank");
+  modal.style.display = "none";
+}
   </script>
 </body>
 </html>
