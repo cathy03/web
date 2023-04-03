@@ -111,32 +111,45 @@ h4{
 .main-info h2{
   font-weight: 500;
   text-align: center;
+  max-width: 200px;
   padding-bottom: 10px;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.main-info .scr-down{
+  overflow: hidden;
 }
 .main-info .scr-down img{
   width: 32px;
   height: 32px;
   padding-bottom: 0;
+  -webkit-animation: scrollDown 2s cubic-bezier(0.23, 0.91, 0.78, 0.03) infinite;
+    animation: scrollDown 2s cubic-bezier(0.23, 0.91, 0.78, 0.03) infinite;;
 }
 
-/* .button__arrow.hover.bottom .button__arrow__shape {
-    -webkit-animation: hoverBottom .37s cubic-bezier(.215,.61,.355,1) both;
-    animation: hoverBottom .37s cubic-bezier(.215,.61,.355,1) both
+@-webkit-keyframes scrollDown {
+  from {
+    -webkit-transform: translate3d(0%,-100%,0);
+    transform: translate3d(0%,-100%,0)
+  }
+
+  to{
+    -webkit-transform: translate3d(0%,100%,0);
+    transform: translate3d(0%,110%,0)
+  }
 }
 
-@-webkit-keyframes hoverBottom {
-    to {
-        -webkit-transform: rotate(225deg) translate3d(-200%,-200%,0);
-        transform: rotate(225deg) translate3d(-200%,-200%,0)
+@keyframes scrollDown {
+    from {
+      -webkit-transform: translate3d(0%,-100%,0);
+      transform: translate3d(0%,-100%,0)
+    }
+
+    to{
+      -webkit-transform: translate3d(0%,100%,0);
+      transform: translate3d(0%,110%,0)
     }
 }
-
-@keyframes hoverBottom {
-    to {
-        -webkit-transform: rotate(225deg) translate3d(-200%,-200%,0);
-        transform: rotate(225deg) translate3d(-200%,-200%,0)
-    }
-} */
 
 
 #brand-video{
@@ -637,6 +650,7 @@ footer .content-wrapper{
   z-index: 100000;
   padding: 0 24px;
   padding-top: 80px;
+  padding-bottom: 80px;
   box-sizing: border-box;
   left: 0;
   top: 0;
@@ -723,9 +737,11 @@ footer .content-wrapper{
     font-size: 4vw;
     line-height: 1.2;
   }
-  .main-info h3{
-    font-size: 1.5vw;
+  .main-info h2{
+    font-size: 2vw;
     line-height: 1.4;
+    max-width: 100%;
+    padding-bottom: 24px;
   }
   .main-info img{
     width: 5vw;
