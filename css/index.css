@@ -637,6 +637,16 @@ footer .content-wrapper{
   width: 25%;
   min-width: 300px;
 }
+.footer-link .sns{
+  padding-top: 8px;
+}
+.footer-link .sns a{
+  padding-right: 8px;
+}
+.footer-link .sns img{
+  width: 24px;
+  height: 24px;
+}
 @media (max-width: 1000px){ 
   .footer-info-section{
     flex-wrap: wrap;

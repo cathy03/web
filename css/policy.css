@@ -1,0 +1,92 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+h1{
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0 20px;
+    margin-bottom: 24px;
+    color: #222;
+}
+h2{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    padding: 0 20px;
+    margin-top: 32px;
+    color: #222;
+    word-break: keep-all;
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+    color: #222;
+    word-break: keep-all;
+}
+strong{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+    color: #222;
+}
+li{
+    margin: 10px 0;
+}
+.explain-section{
+    padding: 0 20px;
+}
+.explain-section p{
+    padding: 20px;
+    background-color: #F5F5F7;
+}
+.info-section-1st{
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.num-list{
+    padding-left: 20px;
+}
+.num-list li{
+    list-style-type: decimal;
+}
+.num-list ::marker{
+    font-size: 14px;
+}
+
+.info-section-2nd {
+    padding-left: 12px;
+}
+.info-section-2nd li{
+    list-style-type: disc;
+}
+.info-section-2nd ::marker{
+    font-size: 12px;
+}
+
+.num-list-2nd{
+    padding-left: 20px;
+}
+.num-list-2nd li{
+    list-style-type: upper-alpha;
+}
+.num-list-2nd ::marker{
+    font-size: 14px;
+}
+
+.info-section-3rd{
+    padding-left: 12px;
+}
+.info-section-3rd li{
+    list-style-type: none;
+}
