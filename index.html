@@ -4,50 +4,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="재미있는 승차 공유 서비스, 풀러팅.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.poolirting.com/">
   <meta property="og:title" content="POOLIRTING">
   <meta property="og:image" content="og_img.jpg">
-  <meta property="og:description" content="설레는 이동, 풀러팅">
-  <meta property="og:site_name" content="설레는 이동, 풀러팅">
+  <meta property="og:description" content="재미있는 승차 공유 서비스, 풀러팅.">
+  <meta property="og:site_name" content="같이 가자. 풀러팅">
   <meta name="naver-site-verification" content="5583dcc6461d7474472f2eb6ec9ae759991c7fc2" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favi/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favi/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favi//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favi//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favi//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favi//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favi//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favi//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favi//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favi//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favi//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favi//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favi//favicon-16x16.png">
+  <link rel="manifest" href="img/favi/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favi/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
-  <title>설레는 이동, 풀러팅</title>
+  <title>같이 가자. 풀러팅</title>
 </head>
 <body>
 
 <button onclick="appLink()" class="download-button">지금 가입하기</button>
-<main>
+<div>
   <section class="main-container">
     <div class="main-info">
       <img src="img/app_icon.png" alt="">
-      <h1>설레는 이동, 풀러팅</h1>
-      <h2>함께 이동하며 즐기는 새로운 만남</h2>
+      <h1>같이 가자. 풀러팅</h1>
+      <h2>재미있는 승차 공유 서비스</h2>
       <div class="scr-down"><img src="img/scr-donw-icon.png" alt=""></div>
     </div>
     <video id="brand-video" autoplay="autoplay" loop="loop" muted="muted" playsinline>
-      <source src="img/brand-video.mp4">
+      <source src="img/aaa.mp4">
     </video>
     <img class="brand-bg" src="img/brand-bg.jpg" alt="">
   </section>
   <section class="contents">
-    <nav>
+    <nav id="gnb">
       <div class="wrapper">
         <div class="tabs">
           <div class="selector"></div>
-          <a href="https://cathy03.github.io/web/#anchor1" class="tab active">가입 안내</a>
+          <a href="javascript:void(0);" onClick="signupMoving()" class="tab active">가입 안내</a>
           <a href="javascript:void(0);" onClick="serviceMoving()" class="tab">이용 방법</a>
           <a href="javascript:void(0);" onClick="reviewMoving()" class="tab">이용 후기</a>
           <a href="javascript:void(0);" onClick="faqMoving()" class="tab">FAQ</a>
         </div>
       </div>
     </nav>
-    <div id="anchor1" class="container signup">
+    <div class="container signup">
       <div class="wrapper">
         <h2>가입 안내</h2>
         <ul class="steps">
@@ -383,7 +400,7 @@
         <ul class="footer-link">
           <!-- <li><a href="https://www.poolirting.com/">회사소개</a></li> -->
           <li><a href="https://poolirting.oopy.io/notice">공지사항</a></li>
-          <li><a href="https://www.poolirting.com/policy/privacy.html">개인정보처리방침</a></li>
+          <li><a href="https://www.poolirting.com/policy/privacy.html">개인(위치)정보처리방침</a></li>
           <li><a href="https://www.poolirting.com/policy/service_location.html">위치기반서비스 이용약관</a></li>
           <li><a href="https://www.poolirting.com/policy/service.html">서비스 이용약관</a></li>
           <li class="sns">
@@ -394,7 +411,7 @@
       </div>
     </div>
   </footer>
-</main>
+</div>
 <div id="carModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
@@ -545,6 +562,20 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+</script>
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org",
+   "@type": "Organization",
+   "name": "설레는 이동, 풀러팅",
+   "url": "https://www.poolirting.com/",
+   "sameAs": [
+     "https://www.instagram.com/poolirting/",
+     "https://www.youtube.com/@poolirting",
+     "https://apps.apple.com/kr/app/%ED%92%80%EB%9F%AC%ED%8C%85-poolirting/id1666746536",
+     "https://play.google.com/store/apps/details?id=com.plt.poolirting"     
+   ]
+  }
 </script>
 </body>
 </html>
