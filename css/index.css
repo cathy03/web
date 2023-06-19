@@ -152,12 +152,6 @@ h4{
 }
 
 
-#brand-video{
-  width: 100%;
-  height: 100svh;
-  object-fit: cover;
-}
-
 .contents{
   margin-top: 100svh;
 }
@@ -757,4 +751,25 @@ footer .content-wrapper{
     width: 5vw;
     height: auto;
   }
+}
+.desktop{
+  display:block;
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+}
+.mobile{
+    display:none;
+}
+
+@media only screen and (max-width: 700px) {
+    .desktop{
+        display:none;
+    }
+    .mobile{
+      display:block;
+      width: 100%;
+      height: 100svh;
+      object-fit: cover;
+    }
 }

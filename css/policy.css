@@ -90,3 +90,37 @@ li{
 .info-section-3rd li{
     list-style-type: none;
 }
+
+.table-area{
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    color: #222;
+}
+th{
+    background-color: #F5F5F7;
+    font-weight: 700;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    vertical-align: middle;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+}
+td{
+    text-align: left;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+}
