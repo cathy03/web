@@ -426,73 +426,20 @@ nav .wrapper{
   box-sizing: border-box;
 }
 
-/* 이용 후기 */
-.review{
-  background: #F5F5F7;
-}
-.reviews{
+/*풀러팅 소식*/
+.news{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
 }
-.reviews li{
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 16px 24px 24px 16px;
+.news li{
   border-radius: 10px;
-  background: white;
-  color: #222;
-  word-wrap: break-word;
-  word-break: keep-all;
+  overflow: hidden;
 }
-.reviews .profile{
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-top:  8px;
-}
-.reviews .info-name{
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 16px;
-}
-.reviews .user-badge{
-  margin-left: 4px;
-  padding: 3px 4px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 11px;
-}
-.reviews .user-badge.driver{
-  background: #F5EEFF;
-  color: #7D2DFF;
-}
-.reviews .user-badge.passenger{
-  background: #FFF1EC;
-  color: #FF774B;
-}
-.reviews .info-route{
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: -0.03em;
-  margin-top: 8px;
-}
-.reviews .info-route img{
-  width: auto;
-  height: 20px;
-}
-.reviews .info-desc{
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: -0.03em;
-  opacity: 0.6;
-  margin-top: 8px;
+
+.news-img{
+  width: 100%;
+  vertical-align: bottom;
 }
 
 /* 자주 묻는 질문 */
@@ -771,5 +718,20 @@ footer .content-wrapper{
       width: 100%;
       height: 100svh;
       object-fit: cover;
+    }
+
+    .news{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .news li{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .news-img{
+      width: 100%;
+      vertical-align: bottom;
     }
 }
