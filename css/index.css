@@ -427,6 +427,10 @@ nav .wrapper{
 }
 
 /*풀러팅 소식*/
+.review{
+  background: #F5F5F7;
+}
+
 .news{
   display: flex;
   flex-direction: row;
@@ -724,14 +728,5 @@ footer .content-wrapper{
       display: flex;
       flex-direction: column;
       gap: 16px;
-    }
-    .news li{
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
-    .news-img{
-      width: 100%;
-      vertical-align: bottom;
     }
 }
