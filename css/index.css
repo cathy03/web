@@ -199,7 +199,6 @@ strong{
   display: none; /* Chrome, Safari, Opera*/
 }
 .img-container.flex img{
-  width: calc(100vw - 40px);
   flex: 0 0 auto;
 }
 
