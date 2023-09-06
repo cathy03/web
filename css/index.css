@@ -1,32 +1,28 @@
 html{
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   background: white;
 }
 h1{
   font-weight: 700;
-  font-size: 17vw;
-  line-height: 1.06;
-  letter-spacing: -0.5vw;
-  word-wrap: break-word;
-  word-break: keep-all;
+  font-size: 38px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -0.04em;
 }
 h2{
   font-weight: 700;
-  font-size: 7.46667vw;/*28px;*/
-  line-height: 1.3;
-  letter-spacing: -0.5vw;
-  color:#000533;
-  word-wrap: break-word;
-  word-break: keep-all;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.06em;
+
+  padding-bottom: 32px;
 }
 h3{
   font-weight: 700;
-  font-size: 6.6667vw; /*23px;*/
-  line-height: 1.2;
-  letter-spacing: -0.2vw;
-  color:#000533;
-  word-wrap: break-word;
-  word-break: keep-all;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
 }
 h4{
   font-weight: 700;
@@ -34,19 +30,10 @@ h4{
   line-height: 21px;
   letter-spacing: -0.03em;
 }
-strong{
-  background: linear-gradient(90deg, #7521FF 0%, #FF32CC 50%, #FF7121 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-span{
-  word-wrap: break-word;
-  word-break: keep-all;
-}
 .wrapper{
   margin: 0 auto;
-  max-width: 720px;
-  padding: 40px 20px 80px 20px;
+  max-width: 640px;
+  padding: 40px 24px 80px 24px;
   box-sizing: border-box;
 }
 
@@ -89,6 +76,8 @@ span{
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100svh;
   background: #110000;
@@ -105,23 +94,27 @@ span{
 }
 .main-info{
   position:absolute;
-  bottom: 120px;
-  left: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color:white;
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1200px;
-  box-sizing: border-box;
+  margin-top: -100px
+}
+.main-info img{
+  width: 64px;
+  height: 64px;
+  padding-bottom: 18px;
 }
 .main-info h1{
   padding-bottom: 10px;
 }
-.main-info span{
-  padding-bottom: 8px;
-  padding-left: 4px;
+.main-info h2{
+  font-weight: 500;
+  text-align: center;
+  max-width: 200px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 .main-info .scr-down{
   overflow: hidden;
@@ -161,137 +154,305 @@ span{
 
 .contents{
   margin-top: 100svh;
+}
+
+/* 탭 영역 - 앵커 */
+nav{
+  backdrop-filter: saturate(180%) blur(15px);
+  background: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+nav .wrapper{
+  padding: 0;
+}
+
+.tabs{
+  color: #222;
+  position: relative;
+  display: flex;
+}
+.tabs a{
+  text-decoration:none;
+  display: inline-block;
+  width: 25%;
+  height: 52px;
+  padding: 18px 0;
+  box-sizing: border-box;
+  color: #222;
+  opacity: 0.4;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.tabs a.active{
+  font-weight: 700;
+  opacity: 1;
+}
+.tabs .selector{
+  width: 24.5%;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  bottom:0;
+  left:0;
+  transition: 0.2s left ease;
+  background: linear-gradient(90deg, #7D2DFE 0%, #FF00F4 50.13%, #FF774B 100.27%), #D9D9D9;
+}
+
+/*가입 안내 */
+.container{
+  background-color: white;
+}
+.signup {
+  background-color: #F5F5F7;
+}
+
+.signup .steps{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.step{
+  width: 100%;
+}
+.divider{
+  width: 100%;
+  height: 1px;
+  background: #222222;
+  opacity: 0.2;
+
+  margin-bottom: 24px;
+}
+.step-info{
+  display: flex;
+  color: #222;
+}
+.step-info .count{
+  width: 25%;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+}
+.step-info .info{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.step-info .info li{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  opacity: 0.6;
+}
+.type-section{
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+  gap: 16px;
+}
+
+.type-card{
+  padding: 24px 24px 32px;
   background: white;
+  border-radius: 10px;
+  transition: 0.4 all ease-in-out;
+}
+.driver .title-section{
+  color: #7D2DFE;
+}
+
+.passenger .title-section{
+  color: #FF774B;
+}
+.title-section span{
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.07em;
+}
+.title-section p{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.03em;
+}
+.type-card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+  transition: 0.2s all ease;
+}
+.type-card.remove ul{
+  display: none;
+}
+
+.type-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.type-card img{
+  width: 40px;
+  height: 40px;
+}
+.type-card .list-info span{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+}
+.type-card .list-info p{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  opacity: 0.6;
+}
+.car-regist{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 20px;
+  gap: 16px;
+  width: 100%;
+  background: #FFFFFF;
+  color: #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.car-regist:hover{
+  background: #222;
+  color: white;
+  
+}
+
+.car-regist span{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+}
+.car-regist img{
+  width: 24px;
+  height: 24px;
 }
 
 /* 이용 방법 */
 .service .wrapper{
-  padding: 0;
-
+  padding: 40px 0 80px 0;
 }
-
-.service-title .wrapper{
-  padding: 80px 40px;
-}
-
 .service-card{
-  margin-bottom: 80px;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #222;
   overflow: hidden;
-  position: relative;
 }
-.img-container{
-  padding: 0 20px;
+.service-card .badge{
+  padding: 5px 9px;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  opacity: 1;
+  margin-bottom: 16px;
+}
+.badge.step1{
+  background: #FF782C;
+}
+.badge.step2{
+  background: #FF5C38;
+}
+.badge.step3{
+  background: #FF4F8F;
+}
+.badge.step4{
+  background: #DD40EB;
+}
+.badge.step5{
+  background: #8438FF;
+}
+.service-card h3{
+  padding-bottom: 6px;
+}
+.service-card span{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  opacity: 0.6;
+  padding-bottom: 28px;
+}
+.phone-container{
+  position: relative; 
+  width: 175px; 
+  height: 368px;
+}
+.phone{
+  position: absolute;
+  top: 0;
+  width: 175px;
+  height: auto;
+}
+.phone::before{
+  content:"";
+  width: 287px;
+  height: 4447px;
+  background-size: 287px 447px;
+  background-repeat: no-repeat;
+  background-image: url("../img/phone_frame.png");
+  position:absolute;
+  top:0;
+  left:0;
+}
+.phone img{
   width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 28px;
   box-sizing: border-box;
 }
-.img-container video{
-  width: 100%;
-  border-radius: 16px;
-  overflow: hidden;
+
+/*풀러팅 소식*/
+.review{
+  background: #F5F5F7;
 }
-.img-container img{
-  width: 100%;
-  border-radius: 16px;
-  overflow: hidden;
-  vertical-align: bottom;
-}
-.img-container.flex{
-  white-space: nowrap;
+
+.news{
   display: flex;
-  flex-wrap: nowrap; 
-  overflow: auto;
-  gap: 10px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.img-container.flex::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
-}
-.img-container.flex img{
-  flex: 0 0 auto;
-}
-
-.info-section{
-  padding: 0 40px;
-  padding-top: 24px;
-}
-.info-section .badge{
-  background: linear-gradient(90deg, #7521FF 0%, #FF32CC 50%, #FF7121 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 12px;
-  letter-spacing: -0.36px;
-  font-weight: 700;
-  opacity: 1;
-  padding-bottom: 12px;
-}
-
-.service-card h3{
-  padding-bottom: 12px;
-}
-.info-section span{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.42px;
-  opacity: 0.4;
-  padding-bottom: 8px;
-  display: inline-block;
-}
-.info-section .more-button{
-  display: flex;
-  align-items: center;
-  color : #7D2DFF;
-}
-.info-section .more-button span{
-  padding-bottom: 0;
-  opacity: 1;
-  font-weight: 700;
-}
-.info-section .more-button img{
-  width: 24px;
-}
-
-/* 이미지 */
-.bg-section img{
-  width: 100%;
-  height: 540px;
-  object-fit: cover;
-  vertical-align: bottom;
-}
-
-/* 인스타그램 */
-.instagram .wrapper{
-  padding: 80px 0;
-}
-.instagram .info-section{
-  padding-top: 0;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-.feed-contents{
-  margin: 0 auto;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
   gap: 16px;
-  padding: 0 40px;
-  padding-top: 24px;
 }
-.feed-contents img{
-  width: 100%;  
+.news li{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-img{
+  width: 100%;
+  vertical-align: bottom;
 }
 
 /* 자주 묻는 질문 */
 .faq{
-  background: #F3F5FF;
+  background: #04002e;
 }
-.faq h3{
-  padding : 0 20px;
-  padding-bottom: 32px;  
+.faq h2{
+  color: white;
 }
-
 .lists{
   display: flex;
   flex-direction: column;
@@ -308,8 +469,7 @@ details{
   cursor: pointer;
 }
 details:hover{
-  background: #222;
-  color: white;
+  background: #eee;
   transition: 0.2s all ease;
 }
 
@@ -377,7 +537,7 @@ details[open] > *:not(summary) { color: inherit; }
 
 /* 푸터 영역 */
 footer{
-  background: white;
+  background: #F5F5F7;
   color: #222;
 }
 footer h4{
@@ -391,7 +551,6 @@ footer .content-wrapper{
   max-width: 1200px;
   padding: 80px 24px;
   padding-bottom: 96px;
-  box-sizing: border-box;
 }
 
 .footer-info-section{
@@ -528,50 +687,22 @@ footer .content-wrapper{
   to {top:0; opacity:1; transform: scale(1);}
 }
 
-@media (min-width: 769px){ 
-  h1{
-    font-size: 140px;
-    letter-spacing: -2px;
+@media (min-width: 1200px){ 
+  .main-info h1{
+    font-size: 4vw;
+    line-height: 1.2;
   }
-  h2{
-    font-size: 56px;
-    letter-spacing: -1px;
-    width: 70%;
+  .main-info h2{
+    font-size: 2vw;
+    line-height: 1.4;
+    max-width: 100%;
+    padding-bottom: 24px;
   }
-  h3{
-    font-size: 40px;
-    letter-spacing: -1px;
-  }
-  .feed-contents{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .wrapper{
-    max-width: 1200px;
-    padding: 40px 20px 80px 20px;
-    box-sizing: border-box;
-  }
-  .service ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  .info-section span {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: -0.42px;
-  }
-
-  .service-card:nth-child(1){
-    margin-top: 440px;
-  }
-  .service-card:nth-child(3){
-    margin-top: 300px;
-  }
-  .service-card:nth-child(4){
-    margin-top: -200px;
+  .main-info img{
+    width: 5vw;
+    height: auto;
   }
 }
-
 .desktop{
   display:block;
   width: 100%;
@@ -582,7 +713,7 @@ footer .content-wrapper{
     display:none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     .desktop{
         display:none;
     }
@@ -591,5 +722,11 @@ footer .content-wrapper{
       width: 100%;
       height: 100svh;
       object-fit: cover;
+    }
+
+    .news{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 }
