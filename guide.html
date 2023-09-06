@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="재미있는 승차 공유 플랫폼, 풀러팅.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.poolirting.com/">
+  <meta property="og:title" content="POOLIRTING">
+  <meta property="og:image" content="og_img.jpg">
+  <meta property="og:description" content="재미있는 승차 공유 플랫폼, 풀러팅.">
+  <meta property="og:site_name" content="같이 가자. 풀러팅">
+  <meta name="naver-site-verification" content="5583dcc6461d7474472f2eb6ec9ae759991c7fc2" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favi/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favi/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favi/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favi/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favi/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favi/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favi/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favi/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favi/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favi/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+  <link rel="manifest" href="img/favi/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favi/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>드라이브 친구 찾기. 풀러팅</title>
+</head>
+<body>
+<div>
+  <div class="container signup">
+    <div class="wrapper">
+      <h2>회원 가입 안내</h2>
+      <nav class="tabs">
+        <div class="tab driver select"><p>드라이버(운전자)</p></div>
+        <div class="tab passenger"><p>패신저(동승자)</p></div>
+        <div class="select-block"></div>
+      </nav> 
+    </div>
+    <div class="step-group">
+      <ul id="driver" class="steps">
+        <li class="step">
+          <div class="step-info">
+            <h3 class="count">1.</h3>
+            <div class="info">
+              <h3>본인 인증</h3>
+              <ul>
+                <li><span>전화번호를 활용한 전자 인증으로 본인임을 확인합니다.</span></li>
+                <li><span>20세 ~ 43세까지 가입 가능</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-info">
+            <h3 class="count">2.</h3>
+            <div class="info">
+              <h3>자격 인증</h3>
+            </div>
+          </div>
+          <div class="type-section">
+            <div class="type-card driver">
+              <ul>
+                <li>
+                  <img src="img/badge_money.png" alt="">
+                  <div class="list-info">
+                    <p>소득 인증</p>
+                    <span>연 4,500만원(20대), 6,000만원(30대), 연 3,000만원(여성)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_company.png" alt="">
+                  <div class="list-info">
+                    <p>대기업 인증</p>
+                    <span>국내/외 기업(풀러팅 내규에 따름)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_ceo.png" alt="">
+                  <div class="list-info">
+                    <p>사업가 인증</p>
+                    <span>연 매출 50억 이상 기업가</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_graduation.png" alt="">
+                  <div class="list-info">
+                    <p>전문직 인증</p>
+                    <span>시중 은행 전문직 인증 기준(의사, 변호사 등)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_asset.png" alt="">
+                  <div class="list-info">
+                    <p>자산 인증</p>
+                    <span>현금 또는 부동산 5억 이상</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-info">
+            <h3 class="count">3.</h3>
+            <div class="info">
+              <h3>차량 인증</h3>
+              <ul>
+                <li><span>본인 소유 차량 사진, 차량 번호가 필요해요.</span></li>
+                <li><span>공동 명의, 가족, 리스 차량은 아래 버튼을 통해 등록 방법을 알려드립니다.</span></li>
+              </ul>
+            </div>
+
+          </div>
+          <button id="openModal" class="car-regist"><span>법인, 리스, 가족 명의 차량 등록하기</span><img src="img/add_icon.png"alt=""></button>
+        </li>
+      </ul>
+      <ul id="passenger" class="steps">
+        <li class="step">
+          <div class="step-info">
+            <h3 class="count">1.</h3>
+            <div class="info">
+              <h3>본인 인증</h3>
+              <ul>
+                <li><span>전화번호를 활용한 전자 인증으로 본인임을 확인합니다.</span></li>
+                <li><span>20세 ~ 43세까지 가입 가능</span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-info">
+            <h3 class="count">2.</h3>
+            <div class="info">
+              <h3>자격 인증</h3>
+            </div>
+          </div>
+          <div class="type-section">
+            <div class="type-card passenger">
+              <ul>
+                <li>
+                  <img src="img/badge_beauty.png" alt="">
+                  <div class="list-info">
+                    <p>프로필 인증</p>
+                    <span>70% 이상의 호감 획득</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_money.png" alt="">
+                  <div class="list-info">
+                    <p>소득 인증</p>
+                    <span>연 4,500만원(20대), 6,000만원(30대), 연 3,000만원(여성)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_company.png" alt="">
+                  <div class="list-info">
+                    <p>대기업 인증</p>
+                    <span>국내/외 기업(풀러팅 내규에 따름)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_ceo.png" alt="">
+                  <div class="list-info">
+                    <p>사업가 인증</p>
+                    <span>연 매출 50억 이상 기업가</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_graduation.png" alt="">
+                  <div class="list-info">
+                    <p>전문직 인증</p>
+                    <span>시중 은행 전문직 인증 기준(의사, 변호사 등)</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/badge_asset.png" alt="">
+                  <div class="list-info">
+                    <p>자산 인증</p>
+                    <span>현금 또는 부동산 5억 이상</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>    
+  </div>
+  <!-- <footer>
+    <div class="content-wrapper">
+      <h4>주식회사 풀러팅</h4>
+      <div class="footer-info-section">
+        <ul class="footer-info">
+          <li><p>대표 : 이지훈</p></li>
+          <li><p>사업자 등록번호 : 337-81-02739</p></li>
+          <li><p>통신판매신고번호 : 제2023-서울강남-02517호</p></li>
+          <li><p>서울특별시 강남구 선릉로 529, 5층 (역삼동)</p></li>
+          <li><p>©Copyright 2023. Poolirting Corp., 풀러팅 All Rights Reserved.</p></li>
+        </ul>
+        <ul class="footer-email">
+          <li><a href="mailto:contacts@poolirting.com" target="_blank" rel="">제휴 및 기타 제안 : contacts@poolirting.com</a>
+          </li>
+          <li><a href="mailto:helps@poolirting.com" target="_blank" rel="">고객센터 : helps@poolirting.com</a></li>
+          <li><p>대표번호 : 010-8260-2216</p></li>
+        </ul>
+        <ul class="footer-link">
+          <li><a href="https://poolirting.oopy.io/notice">공지사항</a></li>
+          <li><a href="https://www.poolirting.com/policy/privacy.html">개인(위치)정보처리방침</a></li>
+          <li><a href="https://www.poolirting.com/policy/service_location.html">위치기반서비스 이용약관</a></li>
+          <li><a href="https://www.poolirting.com/policy/service.html">서비스 이용약관</a></li>
+          <li class="sns">
+            <a href="https://www.youtube.com/@poolirting" target="_blank"><img src="img/link_youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/poolirting/" target="_blank"><img src="img/link_instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/poolirting-inc/" target="_blank"><img src="img/linke_linkedin.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> -->
+</div>
+<div id="carModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4>법인, 리스, 가족명의 <br>차량 등록 하기</h4>
+      <img class="close" src="img/close_icon.png" alt="">
+    </div>
+    <ul class="modal-body">
+      <li>
+        <span>가족명의 차량</span>
+        <p>차량등록증, 가족관계증명서, 차량 사진</p>
+      </li>
+      <li>
+        <span>회사 차량</span>
+        <p>차량 등록증, 사업자등록증, 재직증명서, 차량 사진</p>
+      </li>
+      <li>
+        <span>리스차량(본인)</span>
+        <p>차량 등록증, 리스 계약서, 차량 사진</p>
+      </li>
+      <li>
+        <span>리스차량(가족)</span>
+        <p>차량등록증, 가족관계증명서, 리스계약서, 차량 사진</p>
+      </li>
+      <li>
+        <span>리스차량(법인대표)</span>
+        <p>차량등록증, 사업자등록증, 리스계약서, 차량 사진</p>
+      </li>
+      <li>
+        <p>모든 서류는 제출 본인을 기준으로 본인과 차량소유주의 관계가 증명이 되어야 합니다.</p>
+      </li>
+      <li>
+        <p style="color:#FF0000; opacity: 1;">모든 서류는 주민등록번호 뒷자리를 가리고 보내주세요.</p>
+      </li>
+    </ul>
+    <button onclick="goEmail()" class="modal-button">차량 등록 메일 보내기</button>
+  </div>
+</div>
+<script type="text/javascript">
+  const tabOne = document.querySelector(".driver");
+  const tabTwo = document.querySelector(".passenger");
+  const tab = document.querySelector(".select-block");
+  const contentChanged = document.querySelector(".step-group");
+
+
+  tabOne.addEventListener("click", () => {
+    tabTwo.classList.remove("select");
+    tabOne.classList.add("select");
+    contentChanged.classList.remove("changed");
+    tab.style.left = "0";
+    tab.style.right = "50%";
+    tab.style.background = "#7521FF";
+  });
+  tabTwo.addEventListener("click", () => {
+    tabTwo.classList.add("select");
+    tabOne.classList.remove("select");
+    contentChanged.classList.add("changed");
+    tab.style.left = "50%";
+    tab.style.right = "0";
+    tab.style.background = "#FF7121";
+  });
+
+
+  // Get the modal
+  var modal = document.getElementById("carModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("openModal");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function () {
+      modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  const goEmail = () => {
+      window.open("mailto:helps@poolirting.com", "_blank");
+      modal.style.display = "none";
+  }
+</script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBlwFuplVdVZG6QVvPLGIZgEkw8ujICnTk",
+        authDomain: "poolirting.firebaseapp.com",
+        projectId: "poolirting",
+        storageBucket: "poolirting.appspot.com",
+        messagingSenderId: "208881940190",
+        appId: "1:208881940190:web:8e248ceeb3aff66df9b44f",
+        measurementId: "G-W24MDQ60Z1"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org",
+   "@type": "Organization",
+   "name": "설레는 이동, 풀러팅",
+   "url": "https://www.poolirting.com/",
+   "sameAs": [
+     "https://www.instagram.com/poolirting/",
+     "https://www.youtube.com/@poolirting",
+     "https://apps.apple.com/kr/app/%ED%92%80%EB%9F%AC%ED%8C%85-poolirting/id1666746536",
+     "https://play.google.com/store/apps/details?id=com.plt.poolirting"     
+   ]
+  }
+</script>
+</body>
+</html>
