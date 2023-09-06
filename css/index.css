@@ -7,11 +7,13 @@ h1{
   font-size: 17vw;
   line-height: 1.06;
   letter-spacing: -0.5vw;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 h2{
   font-weight: 700;
   font-size: 7.46667vw;/*28px;*/
-  line-height: 1.25;
+  line-height: 1.3;
   letter-spacing: -0.5vw;
   color:#000533;
   word-wrap: break-word;
@@ -36,6 +38,10 @@ strong{
   background: linear-gradient(90deg, #7521FF 0%, #FF32CC 50%, #FF7121 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+span{
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 .wrapper{
   margin: 0 auto;
@@ -100,11 +106,15 @@ strong{
 .main-info{
   position:absolute;
   bottom: 120px;
-  left: 40px;
-  right: 40px;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   color:white;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 .main-info h1{
   padding-bottom: 10px;
@@ -160,7 +170,7 @@ strong{
 
 }
 
-.service-title{
+.service-title .wrapper{
   padding: 80px 40px;
 }
 
@@ -252,13 +262,17 @@ strong{
 }
 
 /* 인스타그램 */
-.instagram{
+.instagram .wrapper{
   padding: 80px 0;
 }
 .instagram .info-section{
   padding-top: 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .feed-contents{
+  margin: 0 auto;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
@@ -377,6 +391,7 @@ footer .content-wrapper{
   max-width: 1200px;
   padding: 80px 24px;
   padding-bottom: 96px;
+  box-sizing: border-box;
 }
 
 .footer-info-section{
@@ -515,15 +530,44 @@ footer .content-wrapper{
 
 @media (min-width: 769px){ 
   h1{
-    font-size: 14vw;
+    font-size: 140px;
+    letter-spacing: -2px;
   }
   h2{
-    font-size: 4.5vw;
-    letter-spacing: -0.3vw;
+    font-size: 56px;
+    letter-spacing: -1px;
   }
   h3{
-    font-size: 3.3vw;
-    letter-spacing: -0.1vw;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  .feed-contents{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .wrapper{
+    max-width: 1200px;
+    padding: 40px 20px 80px 20px;
+    box-sizing: border-box;
+  }
+  .service ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .info-section span {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.42px;
+  }
+
+  .service-card:nth-child(1){
+    margin-top: 440px;
+  }
+  .service-card:nth-child(3){
+    margin-top: 300px;
+  }
+  .service-card:nth-child(4){
+    margin-top: -200px;
   }
 }
 
