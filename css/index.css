@@ -280,6 +280,7 @@ span{
 }
 .feed-contents img{
   width: 100%;  
+  border-radius: 12px;
 }
 
 /* 자주 묻는 질문 */
